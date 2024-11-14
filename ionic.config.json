@@ -1,0 +1,7 @@
+{
+  "name": "carrito_compartir",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

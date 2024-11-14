@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+
+     <!-- Carrito al lado derecho -->
+     <ion-buttons slot="end">
+      <!-- permite navegar a la ruta /carrito o al que te encuentres-->
+      <ion-button routerLink="/carrito">
+        <ion-icon name="cart-outline"></ion-icon>
+        <!-- Muestra el número de productos en el carrito -->
+        <ion-badge>{{cartCount}}</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+        <ion-card-content >
+          <ion-button  expand="block" (click)="addToCart(productos)">Añadir al carrito</ion-button>
+        </ion-card-content>
+  </div>
+</ion-content>
